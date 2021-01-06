@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <script src="https://kit.fontawesome.com/1a0215f38e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="music-container">
+        <div class="music-thumbnail">
+            <img id="albumArt" src="img/jacinto-1.jpg" alt="Album Art">
+        </div>
+        <h2 class="track-name"></h2>
+        <p class="artist-name"></p>
+        <audio id="currentTrack" src="music/jacinto-1.mp3"></audio>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <span class="elapsed-time" name="currentTime">0:00</span>
+            <span class="duration">2:06</span>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <i class="fas fa-backward" id="previous" title="Previous"></i>
+            <i class="fas fa-play" id="play" title="Play"></i>
+            <i class="fas fa-forward" id="next" title="Next"></i>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
